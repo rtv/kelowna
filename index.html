@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+  <HEAD>
+    <TITLE>The document title</TITLE>
+
+    <style>
+      #map-canvas {
+  
+      height: 300px;
+      width: 100%;
+      }
+    </style>
+
+  </HEAD>
+  <BODY>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script>
+
+  function markerClick() {
+    if (mark.getAnimation() != null) {
+      mark.setAnimation(null);
+    } else {
+     mark.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+
+
+  function initialize() {
+    var mapOptions = {
+      center: { lat: 50, lng: -120 },
+      zoom: 10
+  };
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  
+  var mark = new google.maps.Marker({ 
+     position: new google.maps.LatLng( 49.6, -120 ),
+     map: map } );
+
+
+ google.maps.event.addListener(mark, 'click', markerClick);
+
+
+
+  var mark2 = new google.maps.Marker({ 
+     position: new google.maps.LatLng( 49.9, -120.2 ),
+     map: map } );
+  }
+  
+ google.maps.event.addDomListener(window, 'load', initialize);
+ 
+</script>
+
+<H1>Kelowna Scouting</H1>
+
+<table>
+<tr><td>
+
+<p>
+<div id="map-canvas">
+
+</div>
+
+<td>
+
+
+<a href="https://www.dropbox.com/sc/ti9l2et6aohn10b/AAC8pgiYCnNnnX4YXIQS7uWya">Photo album</a>
+
+</script>
+<h2>Power</h2>
+There is a single mains power port at Knox Mountain Base (KMB), at the NW corner of the lawn with tennis courts, with 6 * 15A outlets, i.e. roughly one 15A outlet per team. I suggest we locate a central HQ tent next to the power port, and have it set up for weatherproof battery and laptop charging.
+
+<h2>Internet</h2>
+
+<ol>
+<li>There is no wired network available.
+<li>I got good 3G signal via Rogers in most areas of the park. You should be able to tether to a cellphone in most places.
+<li>I got a good WiFi signal from ShawOpen at the power point and several other areas. This service is included with Shaw cable Internet service - you might have this already. This should give the most bandwidth but is probably more location-sensitive than 3G.
+</ol>
+
+<h2>Water</h2>
+<p><B>Drinking water</b> is available only via a fountain near the boat launch at a trickle. You should bring drinking water, and use this for emergencies only.
+
+<p><b>Non-potable water</b> will be available from a hose near the tennis courts. This should be good for cleaning gear, but don't drink it.
+
+
+<h2>Sun and Shade</h2>
+
+<p>Kelowna can be warm and sunny in June (though no promises!). The KMB area and boat area are full of shady trees, but the mountain proper is exposed and could be hot. We are allowed to drive vehicles into the old campsite area to shade them if you are planning on working out of your truck in the Barfoot style. If you don't have a truck, or in addition, I think a shade-tent would be useful for each team. Also, the HQ tent should be nice and shady.
+
+<p><b>Bring a good hat, sunscreeen and plenty of water.</b>
+
+<h2>Terrain</h2>
+
+<h3>Ground</h3>
+<p>There are many excellent trails that will suit the Husky. From
+easy, smooth and wide trails to steep, rocky and narrow. Also easy
+mountain bike trials with bumps and jumps if you want some fun but not quite natural
+vertical features.
+
+<p>At KMB the old campsite and road, the beach park and lawns are
+suitable for driving Husky pretty much anywhere.
+
+<p>Off the trails on the mountain proper is grassland with wild
+flowers and sparse trees. We should stick mostly to the trails to
+protect the landscape. 
+
+<h3>Cliffs</h3>
+<p>There are several locations with cliffs with exposed rock, and some are easily accessible from the ground. There is a tall, near-vertical cliff at KMB with excellent base access. We can <b>not touch or climb the cliffs</b> as they are delicate habitat, but we can observe them from close up.
+
+<h3>Flying</h3>
+<p>We can fly anywhere that is safe. Unless
+you hold an SFOC, or have an under-2kg vehicle like ARDrone you must
+tether your UAV. There is lots of space to fly along and around the trails but the land is sparsely treed, which is a big limitation for tethered vehicles.
+
+<p>There is an open meadow on the mountain that might be very good for
+flying. We have not yet secured vehicle access to this. See the images
+and let me and Isabelle know if you want to work on getting to this spot.
+
+<h2>Hotel and environs</h2>
+
+<p>The hotel is comfortable, nice and seems secure. It has a pool and a bar. There is a supermarket adjacent, plus a good burger place and coffee shops. It's a short drive or maybe 20 minute walk to the main downtown bars and restaurants. Kelowna is a very Western car-based town and is unfortunately spread-out. Renting a few bicycles would be very cool for getting around.
+
+<h2>KMB environs</h2>
+
+<p>KMB is in a suburban family neighborhood. The downtown lunch spots are 5 minutes drive away, so you may want to bring a packed lunch and snacks for the day to save time.
+
+<p>There will be people using the park around us, for running, dog walking, etc. I promised the city we were cool with this. Please don't expect a stationary environment at all times!
+
+</tr>
+</table>
+
+  </BODY>
+</HTML>
+
